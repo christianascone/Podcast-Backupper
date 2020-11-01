@@ -1,0 +1,26 @@
+{
+  "name": "podcast_dumper",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Christian Ascone",
+    "email": "ascone.christian@gmail.com",
+    "url": "https://github.com/christianascone"
+  },
+  "bin": {
+    "podcast_backupper": "app.js"
+  },
+  "repository": "https://github.com/christianascone/Podcast-Backupper",
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {
+    "follow-redirects": "^1.13.0",
+    "xml2js": "^0.4.23",
+    "yargs": "^16.1.0"
+  }
+}
