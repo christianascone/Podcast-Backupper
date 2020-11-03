@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha 'test/**/*.js' --recursive"
   },
   "author": {
     "name": "Christian Ascone",
@@ -22,5 +22,9 @@
     "follow-redirects": "^1.13.0",
     "xml2js": "^0.4.23",
     "yargs": "^16.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
   }
 }
