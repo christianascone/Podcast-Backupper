@@ -63,7 +63,8 @@ function writeFeedXml(dir, data) {
 
 function downloadEpisode(dir, filename, url) {
     const file = fs.createWriteStream(dir + path.sep + filename + '.mp3');
-    https.get(url, function (response) {
+    const req = getReqByUri(url);
+    req.get(url, function (response) {
         response.pipe(file);
         file.on('finish', function () {
             file.close();  // close() is async, call cb after close completes.
